@@ -1,0 +1,332 @@
+/* Project Info Specific Styles */
+.developer-showcase {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.developer-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/code-pattern.png');
+    opacity: 0.1;
+}
+
+.showcase-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.showcase-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.showcase-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.tech-item i {
+    font-size: 1.5rem;
+}
+
+.tech-item.html i { color: #e34f26; }
+.tech-item.css i { color: #1572b6; }
+.tech-item.js i { color: #f7df1e; }
+.tech-item.git i { color: #f1502f; }
+
+.project-timeline {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 40px 0;
+    box-shadow: var(--shadow);
+}
+
+.timeline-title {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 40px 0;
+}
+
+.timeline-steps::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: #eee;
+}
+
+.timeline-step {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 0 10px;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: 700;
+}
+
+.step-name {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.step-duration {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.project-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: var(--text-light);
+}
+
+.code-snippet {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 40px 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    direction: ltr;
+    text-align: left;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.code-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.copy-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+}
+
+.code-line {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.comment { color: #6a9955; }
+.keyword { color: #569cd6; }
+.string { color: #ce9178; }
+.function { color: #dcdcaa; }
+.number { color: #b5cea8; }
+
+.project-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.feature-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.download-section {
+    text-align: center;
+    margin: 60px 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+}
+
+.download-title {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.download-subtitle {
+    color: var(--text-light);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    padding: 15px 30px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-download:hover {
+    background: #e55a2b;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.btn-download.secondary {
+    background: var(--secondary-color);
+}
+
+.btn-download.secondary:hover {
+    background: #1a1c2e;
+}
+
+/* Responsive adjustments for project info */
+@media (max-width: 768px) {
+    .tech-stack {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .timeline-steps {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .timeline-steps::before {
+        height: 100%;
+        width: 2px;
+        right: 50%;
+        transform: translateX(50%);
+        top: 0;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+    }
+}
