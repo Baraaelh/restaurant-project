@@ -1,4 +1,4 @@
-# 🍽️ مطعم طعام المحبين | وليد البغدادي
+# 🍽️ مطعم طعام المحبين
 
 ![Project Banner](./img/logo4.jpg)
 
@@ -7,7 +7,7 @@
 - 💾 **مستودع الكود:** [https://github.com/Baraaelh/restaurant-project](https://github.com/Baraaelh/restaurant-project)
 
 ## 👨‍💻 عن المطور
-**وليد البغدادي** - مطور واجهات أمامية متخصص
+**براء الحداد** - مطور واجهات أمامية متخصص
 
 📧 **البريد الإلكتروني:** braalhdad701@gmail.com  
 🐱 **GitHub:** [Baraaelh](https://github.com/Baraaelh)
